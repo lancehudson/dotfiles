@@ -1,3 +1,5 @@
 [user]
 	email = lance@lancehudson.com
 	name = Lance Hudson
+[push]
+	default = simple
