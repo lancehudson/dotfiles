@@ -3,5 +3,8 @@
 [user]
 	email = lance@lancehudson.com
 	name = Lance Hudson
+	signingkey = B2B4DE37
 [push]
 	default = simple
+[commit]
+	gpgsign = true
