@@ -134,10 +134,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
 
-source ~/src/git/contrib/completion/git-prompt.sh
+if [ -d ~/.rvm ]; then
+    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+    source ~/.rvm/scripts/rvm
+fi
+
+if [ -d ~/src/git ]; then
+    source ~/src/git/contrib/completion/git-prompt.sh
+fi
+
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
