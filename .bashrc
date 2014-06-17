@@ -140,6 +140,12 @@ if [ -d ~/.rvm ]; then
     source ~/.rvm/scripts/rvm
 fi
 
+if [ -d ~/.nvm ]; then
+    PATH=$PATH:$HOME/node_modules/.bin:./node_modules/.bin
+    source ~/.nvm/nvm.sh
+    source ~/.nvm/bash_completion
+fi
+
 if [ -d ~/src/git ]; then
     source ~/src/git/contrib/completion/git-prompt.sh
 fi

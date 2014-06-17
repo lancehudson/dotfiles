@@ -67,3 +67,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/x86_64-pc-linux-gnu/gcc-
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# nvm
+if [ -d ~/.nvm ]; then
+    PATH=$PATH:$HOME/node_modules/.bin:./node_modules/.bin
+    source ~/.nvm/nvm.sh
+    source ~/.nvm/bash_completion
+fi
+
