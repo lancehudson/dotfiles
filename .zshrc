@@ -92,3 +92,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+test -d "${NVM_DIR}" && source "/usr/local/opt/nvm/nvm.sh"
+
+test -e "/usr/local/bin/rbenv" $$ eval "$(rbenv init -)"
+test -e "/usr/local/bin/goenv" $$ eval "$(goenv init -)"
+test -e "/usr/local/bin/pyenv" $$ eval "$(pyenv init -)"
